@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Cool Profile Just to See It Reset to Default Black with a Face</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="game-title">
+        <h1>Make a Cool Profile Just to See It Reset to Default Black with a Face</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Customization Options (left) -->
+        <div class="options-panel">
+            <h3>Customize Profile</h3>
+            <label for="usernameInput">Display Name:</label>
+            <input type="text" id="usernameInput" placeholder="Enter username">
+
+            <label for="aboutMeInput">About Me:</label>
+            <input type="text" id="aboutMeInput" placeholder="Enter About Me message">
+
+            <label for="avatarInput">Change Profile Picture:</label>
+            <input type="file" id="avatarInput">
+
+            <label for="bannerInput">Change Banner:</label>
+            <input type="file" id="bannerInput">
+
+            <label for="statusSelect">Online Status:</label>
+            <select id="statusSelect">
+                <option value="offline">Offline</option>
+                <option value="online">Online</option>
+                <option value="dnd">Do Not Disturb</option> <!-- New option -->
+            </select>
+
+            <label for="bgColorInput">Choose Background Color:</label>
+            <input type="color" id="bgColorInput" value="#000000">
+
+            <button id="saveBtn">Save Profile</button>
+        </div>
+
+        <!-- Profile Preview (right) -->
+        <div id="profile" class="profile-preview">
+            <!-- Banner -->
+            <div id="banner" class="banner"></div>
+
+            <!-- Profile picture and online status -->
+            <div class="profile-header">
+                <div class="profile-pic-container">
+                    <img id="avatar" src="spirit.png" alt="Avatar" class="avatar">
+                    <span id="statusIndicator" class="status offline"></span>
+                </div>
+                <h2 id="username">dellulli</h2>
+            </div>
+
+            <!-- About Me section -->
+            <p id="aboutMe">About Me: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
